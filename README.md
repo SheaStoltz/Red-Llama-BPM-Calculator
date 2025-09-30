@@ -32,8 +32,7 @@ This project was built using Visual Studio Community with the following technolo
 * **Framework**: .NET 8 for Windows.
 * **Technology**: Windows Presentation Foundation (WPF) is used for the graphical user interface.
 * **Language**: All application logic is written in C#.
-* **Calculation Logic**: The application captures the `DateTime` of each tap. It then calculates the time difference in milliseconds between consecutive taps. A rolling average of the last four intervals is maintained to smooth out the result, which is then converted into BPM using the formula `BPM = 60000 / averageInterval`.
-* **Assets**: The project includes an embedded audio file (`wilhelm.wav`) for sound feedback and a resource image (`Red Llama with Red Pajams.png`) for the UI.
+* **Calculation Logic**: The application captures the `DateTime` of each tap. It then calculates the time difference in milliseconds between consecutive taps.
 
 ---
 
