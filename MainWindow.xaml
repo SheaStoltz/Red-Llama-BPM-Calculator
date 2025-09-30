@@ -1,0 +1,57 @@
+﻿<Window x:Class="BPM_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BPM_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="0, 0, 10, 0">
+            <Button x:Name="TapButton"
+                    Content="tAp"
+                    Height="150"
+                    Click="TapButton_Click"/>
+            <Button x:Name="ResetButton"
+                    Content="Reset"
+                    Height="50"
+                    Margin="0, 10, 0, 0"
+                    FontSize="18"
+                    Background="#BC544B"
+                    Click="ResetButton_Click"/>
+   
+            
+            
+            <Button x:Name="MuteButton"
+                    Content="Mute"
+                    Height="50"
+                    Margin="0, 10, 0, 0"
+                    FontSize="18"
+                    Background="#4B78BC"
+                    Click="MuteButton_Click"/>
+
+        </StackPanel>
+
+        <Border Grid.Column="1"
+                Background="#FF3E3E42"
+                CornerRadius="8"
+                Margin="10, 0, 0, 0">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="Red Llama with Red Pajams.png"
+                       Height="200"
+                       Margin="0, 0, 0, 20"/>
+                <TextBlock x:Name="BPMTextBlock"
+                           Text="Tap to start"
+                           Foreground="White"
+                           FontSize="48"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

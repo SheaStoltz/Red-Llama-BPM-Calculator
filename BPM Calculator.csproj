@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>BPM_Calculator</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Red Llama with Red Pajams.png" />
+    <None Remove="Red Llama with Red Pajams.png" />
+    <None Remove="wilhelm.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wilhelm.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Red Llama with Red Pajams.png" />
+  </ItemGroup>
+
+</Project>
